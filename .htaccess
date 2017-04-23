@@ -11,7 +11,7 @@ Options -Indexes
     RewriteCond %{HTTP_HOST} ^(www.)?%host%$
 
     # Change 'web' to be the folder you will use for your primary domain.
-    RewriteCond %{REQUEST_URI} !^/web/
+    RewriteCond %{REQUEST_URI} !^/website/
 
     #********************
     # NOT RRCOMMENDED   *
@@ -24,7 +24,7 @@ Options -Indexes
     #RewriteCond %{REQUEST_FILENAME} !-d
 
     # Change 'web' to be the folder you will use for your primary domain.
-    RewriteRule ^(.*)$ /web/$1
+    RewriteRule ^(.*)$ /website/$1
 
     # Change %host% to be your primary domain again. 
     # Change 'web' to be the folder you will use for your primary domain 
